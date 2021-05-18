@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="exit_login" type="id" />
+    <item name="list" type="id" />
+    <item name="search" type="id" />
+    <item name="searchView" type="id" />
+</resources>

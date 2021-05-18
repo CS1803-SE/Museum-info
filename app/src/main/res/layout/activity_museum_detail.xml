@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/musdetback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+    <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/museumdet"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:id="@+id/tv_museumname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="博物馆名称"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+
+        />
+    <!--是竖直方向的滚动条-->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="介绍"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_museumintr"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#ffffff"
+                    android:text="具体介绍"
+                    android:textSize="15sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="地址"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_museumadress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#ffffff"
+                    android:text="具体地址"
+                    android:textSize="15sp" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+
+                />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="开放时间"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_musopentime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#ffffff"
+                    android:text="时间"
+                    android:textSize="15sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="联系电话"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_museumtel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="电话"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/bt_cangpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="2"
+                    android:text="查看藏品"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/bt_museumnews"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="2"
+                    android:text="查看新闻"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/bt_zhanlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="2"
+                    android:text="查看展览"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/bt_huodong"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="2"
+                    android:text="查看活动"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+        <Button
+            android:id="@+id/bt_dianp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="我要评分"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

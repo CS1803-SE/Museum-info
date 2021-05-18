@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#FFFFFF"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/cangpin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="藏品名称"
+        android:textColor="#3F51B5"
+        android:textSize="25sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC" />
+    <TextView
+        android:id="@+id/cangpin_intro"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="藏品简介"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#DCDCDC" />
+</LinearLayout>
